@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>RedexTranslation</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=New+Tegomin&display=swap');
+        :root{
+            --primary-color:#00c1f4;
+            --secondary-color: #fecc1c;
+            --text-color: #00b25a;
+        }
+        body{
+            margin: auto;
+            font-family: 'New Tegomin', serif;
+        }
+        textarea{
+            font-family: inherit;
+            font-size: larger;
+            box-sizing: border-box;
+            font-weight: bold;
+            width:90%;
+            padding: 1rem;
+            height: 20vh;
+            display: block;
+            margin: 1rem;
+            border-radius: 0.5rem;
+        }
+        #output{
+            padding: 1rem;
+            font-family: inherit;
+            font-weight: bold;
+            border: 1px solid black;
+            width:90%;
+            box-sizing: border-box;
+            border-radius: 0.5rem;
+            height: 20vh;
+            display: block;
+            padding: 1rem;
+        }
+        #btn-translate{
+            background-color: var(--secondary-color);
+            margin: 1rem;
+            padding: 1rem;
+            width: 10rem;
+            border:none;
+            border-radius: 0.5rem;            
+            font-family: 'New Tegomin', serif;
+            font-weight: bold;
+            font-size: larger;
+        }
+        #output-center{
+            margin:1rem;
+            font-size: larger;
+            
+        }
+        nav{
+            font-size: larger;
+            padding: 0.5rem;
+            text-align: center;
+            border-bottom-right-radius: 1rem ;
+            border-top-left-radius: 1rem;
+            background-color: var(--primary-color);
+        }
+        footer{
+            border-bottom-right-radius: 1rem ;
+            border-top-left-radius: 1rem;
+            background-color: var(--primary-color);
+            text-align: center;
+            width:100%
+            
+        }
+        footer p {
+            max-width: 600px;
+            margin: auto;
+        }
+        
+    </style>
+</head>
+<body>
+    <nav>
+    <h1>speak <span style="color: var(--text-color);">FERB</span><h1>
+    </nav>
+    <textarea placeholder="Enter the text you wish to convert to FERB latin" id="txt-input"></textarea>
+    <button id="btn-translate">Translate</button>
+    <div id="output-center">
+    <div>FERB speaks below
+        👇</div>
+    <div id="output"></div>
+</div>
+    <footer>
+        <h2>Translation</h2>
+        <p>
+            This is a fun application which converts your text into
+            FERB language which is a famous character form the cartoon series
+            Phineas And Ferb. Hang around and have some fun.
+        </p>
+    </footer>
+
+    <script src="app.js" type="text/javascript"></script>
+
+</body>
+</html>
